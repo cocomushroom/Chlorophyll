@@ -43,7 +43,7 @@ plot(totalChl[,1])
 FungiIndex<- as.factor(c(rep("2T69", 4), rep("1T38", 4), rep("1M05", 4), rep("C", 3)) )
 totalChl[,4]<- FungiIndex
 
-png("D1_by_fungi")
+png("D1_by_fungi.png")
 par(mfrow=c(2,2))
 for(i in 1:3){
     plot(as.numeric(totalChl[,4]),totalChl[,i], xaxt="n", xlab="fungi", ylab="Total Chlorophyll", main=paste0("Day_",DAY[i]))
